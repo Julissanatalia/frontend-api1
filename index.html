@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Explorer - Consumo de API</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="glass-container main-wrapper">
+        <header>
+            <h1>TV Explorer API</h1>
+            <p>Portal de Consumo Frontend</p>
+        </header>
+
+        <main>
+            <!-- Guía Teórica -->
+            <section class="theory-guide glass-panel">
+                <h2>📚 Guía Teórica: Consumo de APIs</h2>
+                <p>Este portal utiliza la <strong>Fetch API</strong> nativa de JavaScript para realizar peticiones HTTP asíncronas (GET) a la API pública de TVMaze. Los datos, recibidos en formato <strong>JSON</strong>, se procesan mediante promesas (<code>async/await</code>) para inyectar y renderizar dinámicamente el DOM, implementando además un medidor de latencia en la respuesta.</p>
+            </section>
+
+            <!-- Interfaz Interactiva -->
+            <section class="search-section glass-panel">
+                <div class="input-group">
+                    <input type="text" id="searchInput" placeholder="Ej. House, Breaking Bad, The Office...">
+                    <button id="searchBtn">Buscar Serie</button>
+                </div>
+                <div id="metrics" class="metrics-display">Esperando interacción...</div>
+            </section>
+
+            <!-- Contenedor de Resultados -->
+            <section id="results" class="results-grid">
+                <!-- Los resultados se inyectan aquí vía app.js -->
+            </section>
+        </main>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
